@@ -168,6 +168,7 @@ export default function AdminMenuPage() {
                   </div>
                   {formData.image && formData.image.startsWith('data:') && (
                     <div className="w-12 h-12 relative rounded border border-black/10 overflow-hidden flex-shrink-0 bg-white">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img src={formData.image} alt="Preview" className="w-full h-full object-cover" />
                     </div>
                   )}
@@ -208,6 +209,7 @@ export default function AdminMenuPage() {
               {items.map((item) => (
                 <div key={item.id} className="glass p-4 flex gap-4 h-32 group relative pr-12">
                   <div className="w-24 h-full relative rounded-sm overflow-hidden flex-shrink-0">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img src={item.image} alt={item.name} className="absolute inset-0 w-full h-full object-cover" />
                   </div>
                   <div className="flex flex-col justify-center">
